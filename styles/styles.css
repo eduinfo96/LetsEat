@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url('images/restaurant.png');
+  margin: 0;
+}
+
+.navbar.navbar-fixed-top {
+  background-color: #4E4D5C;
+  /*background: rgba(78, 77, 92, 0.7);*/
+}
+.navbar.navbar-fixed-bottom {
+  background-color: #4E4D5C;
+  /*background: rgba(78, 77, 92, 0.7);*/
+}
+
+
+.container {
+  margin-top: 120px;
+}
+
+.pull-left img {
+  height: 80px;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.title {
+  display: flex;
+  justify-content:center;
+}
+
+.title h1 {
+  font-family: Josefin Slab;
+  font-size: 40px;
+  text-shadow: 1px 0px #4E4D5C;
+  color: #8D80AD;
+  text-align: justify;
+}
+
+.line-two {
+  margin-left: 50px;
+}
+
+
+.out-button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 8px;
+    border: 2px solid #ffaf5e;
+    border-radius: 45px;
+    background: #ffb64c;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffb64c), to(#fa9e42));
+    background: -moz-linear-gradient(top, #ffb64c, #fa9e42);
+    background: linear-gradient(to bottom, #ffb64c, #fa9e42);
+    text-shadow: #7d4f21 1px 1px 1px;
+    font: normal normal bold 20px Satisfy;
+    color: #ffffff;
+    text-decoration: none;
+}
+/*.button:hover,*/
+.out-button:focus {
+    border: 2px solid #ffc96c;
+    background: #ffda5b;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffda5b), to(#ffbe4f));
+    background: -moz-linear-gradient(top, #ffda5b, #ffbe4f);
+    background: linear-gradient(to bottom, #ffda5b, #ffbe4f);
+    color: #ffffff;
+    text-decoration: none;
+}
+.out-button:active {
+    background: #af6f2e;
+    background: -webkit-gradient(linear, left top, left bottom, from(#af6f2e), to(#fa9e42));
+    background: -moz-linear-gradient(top, #af6f2e, #fa9e42);
+    background: linear-gradient(to bottom, #af6f2e, #fa9e42);
+}
+
+
+
+
+.in-button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 8px;
+    border: 2px solid #004f69;
+    border-radius: 45px;
+    background: #005e7d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#005e7d), to(#004f69));
+    background: -moz-linear-gradient(top, #005e7d, #004f69);
+    background: linear-gradient(to bottom, #005e7d, #004f69);
+    text-shadow: #002f3e 1px 1px 1px;
+    font: normal normal bold 20px Satisfy;
+    color: #ffffff;
+    text-decoration: none;
+}
+/*.button:hover,*/
+.in-button:focus {
+    border: 2px solid #005d7c;
+    background: #007196;
+    background: -webkit-gradient(linear, left top, left bottom, from(#007196), to(#005f7e));
+    background: -moz-linear-gradient(top, #007196, #005f7e);
+    background: linear-gradient(to bottom, #007196, #005f7e);
+    color: #ffffff;
+    text-decoration: none;
+}
+.in-button:active {
+    background: #00384b;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00384b), to(#004f69));
+    background: -moz-linear-gradient(top, #00384b, #004f69);
+    background: linear-gradient(to bottom, #00384b, #004f69);
+}
+
+
+
+.or-text{
+  font-family: Pacifico;
+  color: #e4c79f;
+  margin: auto;
+
+}
+
+.button-sect {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 90px;
+}
+
+.button:focus {
+  outline:0;
+}
+.button{
+
+    border:1px solid #84acc3 !important;
+    font:17px Noto Serif, Arial, sans-serif;
+    text-decoration:none !important;
+    white-space:nowrap;
+    display:inline-block;
+    vertical-align:baseline;
+    position:relative;
+    cursor:pointer;
+    padding:10px 20px;
+    background-repeat:no-repeat;
+    background-position:bottom left;
+    background-image:url('css3-buttons/buttons/button_bg.png');
+    background-position:bottom left, top right, 0 0, 0 0;
+    background-clip:border-box;
+    -moz-border-radius:4em;
+    -webkit-border-radius:4em;
+    border-radius:4em;
+    -moz-box-shadow:0 0 1px #fff inset;
+    -webkit-box-shadow:0 0 1px #fff inset;
+    box-shadow:0 0 1px #fff inset;
+    -webkit-transition: background-position 1s;
+    -moz-transition: background-position 1s;
+    -o-transition: background-position 1s;
+    transition: background-position 1s;
+}
+
+.button:hover{
+
+    background-position:top left;
+    background-position:top left, bottom right, 0 0, 0 0;
+}
+
+#in {
+  background-color: #005E7D;
+  color:#f1ad7b !important;
+}
+
+#out {
+  background-color: #FA9E42;
+  color:#4E4D5C !important;
+}
