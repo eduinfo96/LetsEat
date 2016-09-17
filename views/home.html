@@ -1,0 +1,49 @@
+<div class='row'>
+    <div class='logo'><img src='styles/images/95ea3869-9441-484e-b5b0-3276a87cc5f3.png' />
+    </div>
+
+
+    <div class='title'>
+        <h1> Where Do You </br> <span class='line-two'>Wanna' Go?</span></h1> </div>
+
+
+    <section class="button-sect">
+         <button class='button btn' id='in' data-toggle='modal' data-target='#modal-1'>Let's Eat </br> In</button>
+        <button class='button' id='out' data-toggle='modal' data-target='#modal-2'>Let's Eat </br> Out</button>
+    </section>
+
+
+</div>
+
+<div class='modal fade' id="modal-1">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" type='button' data-dismiss='modal'>&times;</button>
+                <h3 class='modal-title'> Name Your Meal </h3>
+            </div>
+            <div class="modal-body">
+              <button type="button" class="btn btn-warning"  ui-sref='Recipes'>Breakfast</button></br>
+              <button type="button" class="btn btn-warning"  ui-sref='Recipes'>Lunch/Dinner</button></br>
+              <button type="button" class="btn btn-warning"  ui-sref='Recipes'>Dessert</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class='modal fade' id="modal-2">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" type='button' data-dismiss='modal'>&times;</button>
+                <h3 class='modal-title'>What's Your </br> Zip Code? </h3>
+            </div>
+            <div class="modal-body">
+              <form>
+              <input type='text'  placeholder='Enter Here...' pattern='\d*'/>
+              <input type='submit'/>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>

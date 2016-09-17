@@ -4,10 +4,55 @@
 body {
   background-image: url('images/restaurant.png');
   margin: 0;
+  padding-top:60px
+}
+
+@media screen and (max-width: 767px) {
+    body { padding-top: 60px; }
+}
+@media screen and (min-width:768px) and (max-width: 991px) {
+    body { padding-top: 110px; }
+}
+@media screen and (min-width: 992px) {
+    body { padding-top: 60px; }
+}
+
+
+a img {
+  margin-left: 40px;
+  margin-top: 5px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.columns img {
+  height: 85px;
+  width: 85px;
+  border-radius: 30px;
+}
+
+.columns {
+  font-family: Pacifico;
+  font-size: 15px;
+  margin-bottom: 40px;
+
+}
+
+.row{
+  /*align-items: center;
+  flex-direction: row;*/
+}
+
+.text-nowrap {
+    white-space: nowrap;
 }
 
 .navbar.navbar-fixed-top {
   background-color: #4E4D5C;
+  width: 100%;
+
   /*background: rgba(78, 77, 92, 0.7);*/
 }
 .navbar.navbar-fixed-bottom {
@@ -15,13 +60,41 @@ body {
   /*background: rgba(78, 77, 92, 0.7);*/
 }
 
+.btn-lg{
+  border-radius: 50px;
+  background-color: rgb(129,209,208);
+  border-color: rgb(129,209,208);
+  font-family: Noto Serif;
+  margin-left: 1000px;
+  margin-top: 20px;
+  color: #005E7D;
+
+}
+
+.modal-content {
+  background-color: #8D80AD;
+  text-align: center;
+  font-family: Pacifico;
+  border-radius: 50px;
+}
+
+.btn-warning {
+  margin-bottom: 15px;
+  border-radius: 30px;
+  font-family: Josefin Slab;
+}
 
 .container {
-  margin-top: 120px;
+  /*margin-top: 120px;*/
+  /*overflow: scroll;*/
 }
 
 .pull-left img {
   height: 80px;
+}
+
+input[type=text] {
+font-family:Noto Serif;
 }
 
 .logo {
@@ -47,79 +120,6 @@ body {
 .line-two {
   margin-left: 50px;
 }
-
-
-.out-button {
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    padding: 12px 8px;
-    border: 2px solid #ffaf5e;
-    border-radius: 45px;
-    background: #ffb64c;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ffb64c), to(#fa9e42));
-    background: -moz-linear-gradient(top, #ffb64c, #fa9e42);
-    background: linear-gradient(to bottom, #ffb64c, #fa9e42);
-    text-shadow: #7d4f21 1px 1px 1px;
-    font: normal normal bold 20px Satisfy;
-    color: #ffffff;
-    text-decoration: none;
-}
-/*.button:hover,*/
-.out-button:focus {
-    border: 2px solid #ffc96c;
-    background: #ffda5b;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ffda5b), to(#ffbe4f));
-    background: -moz-linear-gradient(top, #ffda5b, #ffbe4f);
-    background: linear-gradient(to bottom, #ffda5b, #ffbe4f);
-    color: #ffffff;
-    text-decoration: none;
-}
-.out-button:active {
-    background: #af6f2e;
-    background: -webkit-gradient(linear, left top, left bottom, from(#af6f2e), to(#fa9e42));
-    background: -moz-linear-gradient(top, #af6f2e, #fa9e42);
-    background: linear-gradient(to bottom, #af6f2e, #fa9e42);
-}
-
-
-
-
-.in-button {
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    padding: 12px 8px;
-    border: 2px solid #004f69;
-    border-radius: 45px;
-    background: #005e7d;
-    background: -webkit-gradient(linear, left top, left bottom, from(#005e7d), to(#004f69));
-    background: -moz-linear-gradient(top, #005e7d, #004f69);
-    background: linear-gradient(to bottom, #005e7d, #004f69);
-    text-shadow: #002f3e 1px 1px 1px;
-    font: normal normal bold 20px Satisfy;
-    color: #ffffff;
-    text-decoration: none;
-}
-/*.button:hover,*/
-.in-button:focus {
-    border: 2px solid #005d7c;
-    background: #007196;
-    background: -webkit-gradient(linear, left top, left bottom, from(#007196), to(#005f7e));
-    background: -moz-linear-gradient(top, #007196, #005f7e);
-    background: linear-gradient(to bottom, #007196, #005f7e);
-    color: #ffffff;
-    text-decoration: none;
-}
-.in-button:active {
-    background: #00384b;
-    background: -webkit-gradient(linear, left top, left bottom, from(#00384b), to(#004f69));
-    background: -moz-linear-gradient(top, #00384b, #004f69);
-    background: linear-gradient(to bottom, #00384b, #004f69);
-}
-
-
-
 .or-text{
   font-family: Pacifico;
   color: #e4c79f;
