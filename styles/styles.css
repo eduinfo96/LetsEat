@@ -16,7 +16,22 @@ body {
 @media screen and (min-width: 992px) {
     body { padding-top: 60px; }
 }
+.columns > img {
+  border-width: 3px;
+  border-color: black;
+}
 
+.rec-text {
+  font-family: Josefin Slab;
+
+}
+.recipe-ideas {
+  font-size: 16px;
+  font-family: Satisfy;
+  display: inline-block;
+  color: #005E7D
+
+}
 
 a img {
   margin-left: 40px;
@@ -43,9 +58,11 @@ form input {
   font-family: Josefin Slab;
   color: #8D80AD;
   font-size: 26px;
+  margin-bottom: 30px;
 }
 .rest-names {
   font-size: 16px;
+  font-family: Satisfy;
 }
 
 h3 {
@@ -54,7 +71,7 @@ h3 {
 
 .rest-rec-list-view {
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
 .rest-ideas {
@@ -163,6 +180,8 @@ font-family:Noto Serif;
   margin: auto;
 
 }
+
+
 
 .button-sect {
   display: flex;

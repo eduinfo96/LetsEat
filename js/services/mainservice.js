@@ -17,7 +17,6 @@ var ranStr = 'https://foursquare.com/explore?mode=url&near=Dallas%2C%20TX%2C%20U
   this.getBreakRecs = function() {
     return $http.get(f2fBase + f2fKey + f2fBreak
     ).then(function(response) {
-           console.log(response.data.recipes);
            return response.data.recipes
    });
  }
@@ -25,7 +24,6 @@ var ranStr = 'https://foursquare.com/explore?mode=url&near=Dallas%2C%20TX%2C%20U
   this.getDinRecs = function() {
      return $http.get(f2fBase + f2fKey + f2fDin
      ).then(function(response) {
-            console.log(response.data.recipes);
             return response.data.recipes
     });
   }
@@ -33,16 +31,13 @@ var ranStr = 'https://foursquare.com/explore?mode=url&near=Dallas%2C%20TX%2C%20U
   this.getDesserts = function() {
      return $http.get(f2fBase + f2fKey + f2fDes
      ).then(function(response) {
-            console.log(response.data.recipes);
             return response.data.recipes
     });
   }
 
  this.findRest = function(city, state) {
-   console.log(location)
    return $http.get(fsBase + '&near=' + city + ',' + state + '&section=food' + fsVersAndM  )
  .then(function(response) {
-        console.log(response.data.response.groups[0].items)
         return response.data.response.groups[0].items;
  })
  }

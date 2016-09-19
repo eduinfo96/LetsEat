@@ -1,5 +1,3 @@
-angular.module( 'app' ).controller( 'myListCtrl', function($scope, mainService) {
-
-
-
+angular.module( 'app' ).controller( 'myListCtrl', function($scope, $rootScope, mainService) {
+  
 });

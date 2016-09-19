@@ -22,8 +22,7 @@ angular.module( 'app', ['ui.router'] )
       })
       .state('myList', {
           url: '/mylist'
-          , template:'..views/myList.html'
-          , controller: 'myListCtrl'
+          , templateUrl: '../views/myList.html'
       })
 
 

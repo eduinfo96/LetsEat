@@ -1,7 +1,7 @@
 angular.module( 'app' )
 .controller('homeCtrl', function($scope, mainService, $location, $rootScope){
 
-$scope.x = "";
+$rootScope.restList =[];
 
 $scope.getBreakRecs = function() {
   $location.path('/recipes')
