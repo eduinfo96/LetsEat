@@ -1,8 +1,6 @@
-angular.module( 'app' ).controller( 'restCtrl', function($scope, mainService) {
+angular.module( 'app' )
+.controller( 'restCtrl', function($scope, mainService, $rootScope) {
 
-  $scope.getRecipes = mainsService.getRecipes.then(function(receipes){
-      $scope.receipes = receipes;
-  })
 
 
 

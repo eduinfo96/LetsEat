@@ -23,9 +23,45 @@ a img {
   margin-top: 5px;
 }
 
+form input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+
+#ex-text {
+  font-family: Josefin Slab;
+}
+
+#home-view {
+  margin-top: 40px;
+
+}
+
+.rest-rec-list-title {
+  font-family: Josefin Slab;
+  color: #8D80AD;
+  font-size: 26px;
+}
+.rest-names {
+  font-size: 16px;
+}
+
 h3 {
   text-align: center;
 }
+
+.rest-rec-list-view {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.rest-ideas {
+  color:  #005E7D;
+}
+
+
 
 .columns img {
   height: 85px;
@@ -37,6 +73,7 @@ h3 {
   font-family: Pacifico;
   font-size: 15px;
   margin-bottom: 40px;
+  margin-left: 200px;
 
 }
 

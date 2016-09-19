@@ -7,6 +7,7 @@ angular.module( 'app', ['ui.router'] )
     $stateProvider
       .state('Home', {
         url:'/'
+        , controller: 'homeCtrl'
         , templateUrl:'../views/home.html'
       })
       .state('Recipes', {
@@ -18,6 +19,11 @@ angular.module( 'app', ['ui.router'] )
           url:'/restaurants'
           , templateUrl: '../views/restaurants.html'
           , controller: "restCtrl"
+      })
+      .state('myList', {
+          url: '/mylist'
+          , template:'..views/myList.html'
+          , controller: 'myListCtrl'
       })
 
 

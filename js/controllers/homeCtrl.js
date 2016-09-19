@@ -1,6 +1,7 @@
 angular.module( 'app' )
-.controller('recipeCtrl', function($scope, mainService, $location, $rootScope){
+.controller('homeCtrl', function($scope, mainService, $location, $rootScope){
 
+$scope.x = "";
 
 $scope.getBreakRecs = function() {
   $location.path('/recipes')
@@ -17,12 +18,20 @@ $scope.getDinRecs = function() {
 }
 
 $scope.getDesserts = function() {
-  $location.path('Recipes')
+  $location.path('/recipes')
   mainService.getDesserts().then( function( recipes ) {
   $rootScope.recipes = recipes;
 })
 }
 
+$scope.findRest = function(city, state){
+  console.log("hi");
+  $location.path('/restaurants')
+  mainService.findRest(city, state).then( function(restaurants) {
+    $rootScope.restaurants = restaurants;
+  })
+}
+
+
 
 })
-// })

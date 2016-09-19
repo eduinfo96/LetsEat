@@ -1,8 +1,11 @@
 
-    <h3> Ideas Just For You </h3>
+<section ng-app="recipeCtrl" class=rest-rec-list-view>
+    <h3 class='rest-rec-list-title'> Ideas Just For You...</h3>
     <div class="row" >
-        <div class="col-lg-5 columns" ng-repeat='recipe in recipes'>
-          <img ng-src="{{recipe.image_url}}"> <span class='recipe-ideas'>{{recipe.title}}</span>
+        <div class="col-md-4 columns" ng-repeat='recipe in recipes'>
+          <img ng-src="{{recipe.image_url}}">
+          <div class='recipe-ideas'>{{recipe.title}}</div>
        </div>
 
     </div>
+</section>
