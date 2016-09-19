@@ -180,8 +180,17 @@ font-family:Noto Serif;
   margin: auto;
 
 }
+ .button-list {
+   border-radius: 30px;
+   background-color: #8D80AD;
+}
 
-
+.list-cont {
+  margin-left: 400px;
+  font-family: Satisfy;
+  font-size: 16px;
+  color: #4E4D5C;
+}
 
 .button-sect {
   display: flex;
