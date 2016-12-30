@@ -1,18 +1,20 @@
-<div class='row' id='home-view'>
-    <div class='logo'><img src='styles/images/95ea3869-9441-484e-b5b0-3276a87cc5f3.png' />
-    </div>
+<div class="container">
+  <div class='row' id='home-view'>
+      <div class='logo'><img src='styles/images/95ea3869-9441-484e-b5b0-3276a87cc5f3.png' />
+      </div>
 
 
-    <div class='title'>
-        <h1> Where Do You </br> <span class='line-two'>Wanna' Go?</span></h1> </div>
+      <div class='title'>
+          <h1> Where Do You </br> <span class='line-two'>Wanna' Go?</span></h1> </div>
 
 
-    <section class="button-sect">
-         <button class='button btn' id='in' data-toggle='modal' data-target='#modal1'>Let's Eat </br> In</button>
-        <button class='button' id='out' data-toggle='modal' data-target='#modal2'>Let's Eat </br> Out</button>
-    </section>
+      <section class="button-sect">
+           <button class='button btn' id='in' data-toggle='modal' data-target='#modal1'>Let's Eat </br> In</button>
+          <button class='button' id='out' data-toggle='modal' data-target='#modal2'>Let's Eat </br> Out</button>
+      </section>
 
 
+  </div>
 </div>
 
 <div class='modal fade' id="modal1">
@@ -42,7 +44,7 @@
               <form>
                 <input type='text' ng-model="city" placeholder='City'/>
                 <input type='text' ng-model="state" placeholder='State (ex: TX)'/>
-                <input type='submit' ng-click="findRest(city, state)" data-dismiss="modal" />
+                <input class="submit" type='submit' ng-click="findRest(city, state)" data-dismiss="modal" />
             </form>
             </div>
         </div>

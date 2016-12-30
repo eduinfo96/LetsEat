@@ -3,7 +3,7 @@ angular.module( 'app' )
 
 
 $scope.getBreakRecs = function() {
-  $location.path('/recipes')
+  $location.path('/recipes');
   mainService.getBreakRecs().then( function( recipes ) {
   $rootScope.recipes = recipes;
 })
@@ -17,7 +17,7 @@ $scope.getDinRecs = function() {
 }
 
 $scope.getDesserts = function() {
-  $location.path('Recipes')
+  $location.path('/recipes')
   mainService.getDesserts().then( function( recipes ) {
   $rootScope.recipes = recipes;
 })

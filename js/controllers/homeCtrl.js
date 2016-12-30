@@ -6,6 +6,9 @@ $rootScope.restList =[];
 $scope.getBreakRecs = function() {
   $location.path('/recipes')
   mainService.getBreakRecs().then( function( recipes ) {
+    for( let i = 0; i < recipes.length; i++ ){
+      recipes[i].title = recipes[i].title.length <= 62 ? recipes[i].title : recipes[i].title.split("").splice(0, 59).join("") + "...";
+    }
   $rootScope.recipes = recipes;
 })
 }
@@ -13,19 +16,25 @@ $scope.getBreakRecs = function() {
 $scope.getDinRecs = function() {
   $location.path('/recipes')
   mainService.getDinRecs().then( function( recipes ) {
+    for( let i = 0; i < recipes.length; i++ ){
+      recipes[i].title = recipes[i].title.length <= 62 ? recipes[i].title : recipes[i].title.split("").splice(0, 59).join("") + "...";
+    }
   $rootScope.recipes = recipes;
 })
 }
 
 $scope.getDesserts = function() {
+  console.log("hi")
   $location.path('/recipes')
   mainService.getDesserts().then( function( recipes ) {
+    for( let i = 0; i < recipes.length; i++ ){
+      recipes[i].title = recipes[i].title.length <= 62 ? recipes[i].title : recipes[i].title.split("").splice(0, 59).join("") + "...";
+    }
   $rootScope.recipes = recipes;
 })
 }
 
 $scope.findRest = function(city, state){
-  console.log("hi");
   $location.path('/restaurants')
   mainService.findRest(city, state).then( function(restaurants) {
     $rootScope.restaurants = restaurants;

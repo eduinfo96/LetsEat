@@ -1,19 +1,15 @@
 <div ng-app="restCtrl" class="row rest-rec-list-view">
     <h3 class='rest-rec-list-title'> One Of These May Suit Your Needs...</h3>
-    </br>
-    </br>
-    </br>
-    <div class="col-lg-4 columns" ng-repeat='restaurant in restaurants'>
-        <div class="rest-names">Name: <span class='rest-ideas'> {{restaurant.venue.name}}</span>
-        </br>
-        <span> Street Address:  <span class='rest-ideas'>{{restaurant.venue.location.address}}</span></span>
-        </br>City: <span class='rest-ideas'>{{restaurant.venue.location.formattedAddress[1]}}</span>
-        </br>
-        <span> Category:  <span class='rest-ideas'>{{restaurant.venue.categories[0].name}}</span> </span>
-        </br>
-        <button class='button-list' ng-click='addToList( restaurant )'><span class="glyphicon glyphicon-plus"></span>Add-To-List</button>
+    <div class="row">
+      <div class="col-lg-4 columns" ng-repeat='restaurant in restaurants'>
+          <div class="rest-names">Name: <span class='rest-ideas'> {{restaurant.venue.name}}</span>
+          </br>
+          <span> Street Address:  <span class='rest-ideas'>{{restaurant.venue.location.address}}</span></span>
+          </br>City: <span class='rest-ideas'>{{restaurant.venue.location.formattedAddress[1]}}</span>
+          </br>
+          <span> Category:  <span class='rest-ideas'>{{restaurant.venue.categories[0].name}}</span> </span>
+          </br>
+          <button class='btn-info button-list' ng-click='addToList( restaurant )'><span class="glyphicon glyphicon-plus"></span>Add</button>
+        </div>
       </div>
-
-    </div>
-
-</div>
+  </div>
