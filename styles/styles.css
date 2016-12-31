@@ -16,6 +16,14 @@ body {
     body { padding-top: 60px; }
 }*/
 
+.rest-info{
+  display: inline-block;
+  width: 579px;
+}
+
+.list-item{
+  width: 100%;
+}
 
 .recipe{
   height: 117px;
@@ -26,6 +34,10 @@ body {
   align-items: center;
 }
 
+.cross{
+  text-decoration: line-through;
+  color: #8D80AD;
+}
 
 .rec-text {
   font-family: Handlee;
@@ -162,7 +174,7 @@ h3 {
   color: rgb(129,209,208);
 }
 .modal-content {
-  background-color: #8D80AD;
+  background-color: #FA9E42;
   text-align: center;
   font-family: Josefin Slab;
   border-radius: 50px;
